@@ -1,3 +1,84 @@
-body {
-  background-color: red;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lora', serif;
+}
+
+header {
+  padding: 2% 5%;
+  font-size: 2rem;
+  margin-bottom: 2em;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0;
+
+  .title {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+
+    & h2 {
+      font-size: 1.5rem;
+    }
+
+    & button {
+      width: 6em;
+      background-color: #fff;
+      border-radius: 5%;
+      border: 1px solid #000;
+    }
+  }
+
+  .board {
+    & .add-to-board {
+      border: 1px solid #000;
+
+      li {
+        background: #c9cec9;
+      }
+
+      li:nth-child(odd) {
+        background: #8d8a8a;
+      }
+    }
+
+    & .list-item {
+      list-style: none;
+      padding: 0.5em;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      margin-bottom: 1em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      #score {
+        -webkit-appearance: none;
+        -moz-appearance: textfield;
+        margin: 0;
+      }
+
+      button {
+        align-self: flex-end;
+        padding: 0.2em;
+        width: 5em;
+        background-color: #fff;
+        border-radius: 5%;
+        border: 1px solid #000;
+      }
+    }
+  }
 }
