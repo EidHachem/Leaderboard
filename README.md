@@ -1,6 +1,6 @@
 # Leaderboard
 
-- In this project, I built a basic leaderboard that displays the scores of users.
+- In this project, I built a basic leaderboard that fetch data from the Leaderboard API and display it for the user with the ability to add new data.
 
 ## Built With
 
