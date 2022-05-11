@@ -36,6 +36,7 @@ main {
   .board {
     & .add-to-board {
       border: 1px solid #000;
+      list-style: none;
 
       li {
         background: #c9cec9;
@@ -47,7 +48,6 @@ main {
     }
 
     & .list-item {
-      list-style: none;
       padding: 0.5em;
     }
   }
