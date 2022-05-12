@@ -5,10 +5,17 @@
   font-family: 'Lora', serif;
 }
 
+body {
+  min-height: 100vh;
+  background: linear-gradient( to top right, #82e6e8, #3d3f8d) no-repeat;
+}
+
 header {
-  padding: 2% 5%;
+  text-align: center;
   font-size: 2rem;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+  margin-top: 2em;
+  color: #fff;
 }
 
 main {
@@ -22,34 +29,51 @@ main {
     margin-bottom: 1em;
 
     & h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      color: #fff;
     }
 
     & button {
       width: 6em;
-      background-color: #fff;
+      background: linear-gradient( to top left, rgba(147, 126, 240, 0.8), rgba(29, 31, 122, 0.8)) no-repeat;
+      color: #fff;
+      font-size: 1rem;
       border-radius: 5%;
-      border: 1px solid #000;
+      border: 1px solid #fff;
+      margin-left: 10em;
+    }
+
+    & button:hover {
+      background: linear-gradient( to top left, rgba(147, 126, 240, 0.5), rgba(29, 31, 122, 0.5)) no-repeat;
+    }
+
+    & button:active {
+      background: linear-gradient( to top left, #937ef0, #1d1f7a) no-repeat;
     }
   }
 
   .board {
+    min-width: 30em;
+
     & .add-to-board {
-      border: 1px solid #000;
+      border: 1px solid #fff;
       list-style: none;
+      
 
       li {
-        background: #c9cec9;
+        background: #cac3ea;
+        padding: 0.8em;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
       }
 
       li:nth-child(odd) {
-        background: #8d8a8a;
+        background: #5556af;
       }
     }
 
-    & .list-item {
-      padding: 0.5em;
-    }
+    
   }
 
   .form {
@@ -58,26 +82,45 @@ main {
 
     h2 {
       margin-bottom: 1em;
+      font-size: 2rem;
+      color: #fff;
+      align-self: center;
     }
 
     form {
       display: flex;
       flex-direction: column;
       gap: 1em;
+      min-width: 20em;
+
+      #name {
+        padding: 1em;
+      }
 
       #score {
         -webkit-appearance: none;
         -moz-appearance: textfield;
         margin: 0;
+        padding: 1em;
       }
 
       button {
-        align-self: flex-end;
+        align-self: center;
         padding: 0.2em;
-        width: 5em;
-        background-color: #fff;
+        width: 7em;
+        height: 3em;
+        background: linear-gradient( to top left, rgba(147, 126, 240, 0.8), rgba(29, 31, 122, 0.8)) no-repeat;
+        color: #fff;
         border-radius: 5%;
-        border: 1px solid #000;
+        border: 1px solid #fff;
+      }
+
+      & button:hover {
+        background: linear-gradient( to top left, rgba(147, 126, 240, 0.5), rgba(29, 31, 122, 0.5)) no-repeat;
+      }
+  
+      & button:active {
+        background: linear-gradient( to top left, #937ef0, #1d1f7a) no-repeat;
       }
     }
   }
