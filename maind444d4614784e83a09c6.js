@@ -56,7 +56,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lora\", serif;\n}\n\nheader {\n  padding: 2% 5%;\n  font-size: 2rem;\n  margin-bottom: 2em;\n}\n\nmain {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 0;\n}\nmain .title {\n  display: flex;\n  gap: 1em;\n  margin-bottom: 1em;\n}\nmain .title h2 {\n  font-size: 1.5rem;\n}\nmain .title button {\n  width: 6em;\n  background-color: #fff;\n  border-radius: 5%;\n  border: 1px solid #000;\n}\nmain .board .add-to-board {\n  border: 1px solid #000;\n  list-style: none;\n}\nmain .board .add-to-board li {\n  background: #c9cec9;\n}\nmain .board .add-to-board li:nth-child(odd) {\n  background: #8d8a8a;\n}\nmain .board .list-item {\n  padding: 0.5em;\n}\nmain .form {\n  display: flex;\n  flex-direction: column;\n}\nmain .form h2 {\n  margin-bottom: 1em;\n}\nmain .form form {\n  display: flex;\n  flex-direction: column;\n  gap: 1em;\n}\nmain .form form #score {\n  -webkit-appearance: none;\n  -moz-appearance: textfield;\n  margin: 0;\n}\nmain .form form button {\n  align-self: flex-end;\n  padding: 0.2em;\n  width: 5em;\n  background-color: #fff;\n  border-radius: 5%;\n  border: 1px solid #000;\n}", "",{"version":3,"sources":["webpack://./src/styles/style.scss"],"names":[],"mappings":"AAAA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;EACA,0BAAA;AACF;;AAEA;EACE,cAAA;EACA,eAAA;EACA,kBAAA;AACF;;AAEA;EACE,aAAA;EACA,6BAAA;EACA,aAAA;AACF;AACE;EACE,aAAA;EACA,QAAA;EACA,kBAAA;AACJ;AACI;EACE,iBAAA;AACN;AAEI;EACE,UAAA;EACA,sBAAA;EACA,iBAAA;EACA,sBAAA;AAAN;AAKI;EACE,sBAAA;EACA,gBAAA;AAHN;AAKM;EACE,mBAAA;AAHR;AAMM;EACE,mBAAA;AAJR;AAQI;EACE,cAAA;AANN;AAUE;EACE,aAAA;EACA,sBAAA;AARJ;AAUI;EACE,kBAAA;AARN;AAWI;EACE,aAAA;EACA,sBAAA;EACA,QAAA;AATN;AAWM;EACE,wBAAA;EACA,0BAAA;EACA,SAAA;AATR;AAYM;EACE,oBAAA;EACA,cAAA;EACA,UAAA;EACA,sBAAA;EACA,iBAAA;EACA,sBAAA;AAVR","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Lora', serif;\n}\n\nheader {\n  padding: 2% 5%;\n  font-size: 2rem;\n  margin-bottom: 2em;\n}\n\nmain {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 0;\n\n  .title {\n    display: flex;\n    gap: 1em;\n    margin-bottom: 1em;\n\n    & h2 {\n      font-size: 1.5rem;\n    }\n\n    & button {\n      width: 6em;\n      background-color: #fff;\n      border-radius: 5%;\n      border: 1px solid #000;\n    }\n  }\n\n  .board {\n    & .add-to-board {\n      border: 1px solid #000;\n      list-style: none;\n\n      li {\n        background: #c9cec9;\n      }\n\n      li:nth-child(odd) {\n        background: #8d8a8a;\n      }\n    }\n\n    & .list-item {\n      padding: 0.5em;\n    }\n  }\n\n  .form {\n    display: flex;\n    flex-direction: column;\n\n    h2 {\n      margin-bottom: 1em;\n    }\n\n    form {\n      display: flex;\n      flex-direction: column;\n      gap: 1em;\n\n      #score {\n        -webkit-appearance: none;\n        -moz-appearance: textfield;\n        margin: 0;\n      }\n\n      button {\n        align-self: flex-end;\n        padding: 0.2em;\n        width: 5em;\n        background-color: #fff;\n        border-radius: 5%;\n        border: 1px solid #000;\n      }\n    }\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lora\", serif;\n}\n\nbody {\n  min-height: 100vh;\n  background: linear-gradient(to top right, #82e6e8, #3d3f8d) no-repeat;\n}\n\nheader {\n  text-align: center;\n  font-size: 2rem;\n  margin-bottom: 3em;\n  margin-top: 2em;\n  color: #fff;\n}\n\nmain {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 0;\n}\nmain form button {\n  align-self: center;\n  padding: 0.2em;\n  width: 7em;\n  height: 3em;\n  background: linear-gradient(to top left, rgba(147, 126, 240, 0.8), rgba(29, 31, 122, 0.8)) no-repeat;\n  color: #fff;\n  border-radius: 5%;\n  border: 1px solid #fff;\n}\nmain button:hover {\n  background: linear-gradient(to top left, rgba(147, 126, 240, 0.5), rgba(29, 31, 122, 0.5)) no-repeat;\n}\nmain button:active {\n  background: linear-gradient(to top left, #937ef0, #1d1f7a) no-repeat;\n}\nmain .title {\n  display: flex;\n  gap: 1em;\n  margin-bottom: 1em;\n}\nmain .title h2 {\n  font-size: 2rem;\n  color: #fff;\n}\nmain .title button {\n  width: 6em;\n  background: linear-gradient(to top left, rgba(147, 126, 240, 0.8), rgba(29, 31, 122, 0.8)) no-repeat;\n  color: #fff;\n  font-size: 1rem;\n  border-radius: 5%;\n  border: 1px solid #fff;\n  margin-left: 10em;\n}\nmain .title button:hover {\n  background: linear-gradient(to top left, rgba(147, 126, 240, 0.5), rgba(29, 31, 122, 0.5)) no-repeat;\n}\nmain .title button:active {\n  background: linear-gradient(to top left, #937ef0, #1d1f7a) no-repeat;\n}\nmain .board {\n  min-width: 30em;\n}\nmain .board .add-to-board {\n  border: 1px solid #fff;\n  list-style: none;\n}\nmain .board .add-to-board li {\n  background: #cac3ea;\n  padding: 0.8em;\n  color: #fff;\n  font-weight: bold;\n  text-align: center;\n}\nmain .board .add-to-board li:nth-child(odd) {\n  background: #5556af;\n}\nmain .form {\n  display: flex;\n  flex-direction: column;\n}\nmain .form h2 {\n  margin-bottom: 1em;\n  font-size: 2rem;\n  color: #fff;\n  align-self: center;\n}\nmain .form form {\n  display: flex;\n  flex-direction: column;\n  gap: 1em;\n  min-width: 20em;\n}\nmain .form form #name {\n  padding: 1em;\n}\nmain .form form #score {\n  -webkit-appearance: none;\n  -moz-appearance: textfield;\n  margin: 0;\n  padding: 1em;\n}", "",{"version":3,"sources":["webpack://./src/styles/style.scss"],"names":[],"mappings":"AAAA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;EACA,0BAAA;AACF;;AAEA;EACE,iBAAA;EACA,qEAAA;AACF;;AAEA;EACE,kBAAA;EACA,eAAA;EACA,kBAAA;EACA,eAAA;EACA,WAAA;AACF;;AAEA;EACE,aAAA;EACA,6BAAA;EACA,aAAA;AACF;AACE;EACE,kBAAA;EACA,cAAA;EACA,UAAA;EACA,WAAA;EACA,oGAAA;EACA,WAAA;EACA,iBAAA;EACA,sBAAA;AACJ;AAEE;EACE,oGAAA;AAAJ;AAGE;EACE,oEAAA;AADJ;AAIE;EACE,aAAA;EACA,QAAA;EACA,kBAAA;AAFJ;AAII;EACE,eAAA;EACA,WAAA;AAFN;AAKI;EACE,UAAA;EACA,oGAAA;EACA,WAAA;EACA,eAAA;EACA,iBAAA;EACA,sBAAA;EACA,iBAAA;AAHN;AAMI;EACE,oGAAA;AAJN;AAOI;EACE,oEAAA;AALN;AASE;EACE,eAAA;AAPJ;AASI;EACE,sBAAA;EACA,gBAAA;AAPN;AASM;EACE,mBAAA;EACA,cAAA;EACA,WAAA;EACA,iBAAA;EACA,kBAAA;AAPR;AAUM;EACE,mBAAA;AARR;AAaE;EACE,aAAA;EACA,sBAAA;AAXJ;AAaI;EACE,kBAAA;EACA,eAAA;EACA,WAAA;EACA,kBAAA;AAXN;AAcI;EACE,aAAA;EACA,sBAAA;EACA,QAAA;EACA,eAAA;AAZN;AAcM;EACE,YAAA;AAZR;AAeM;EACE,wBAAA;EACA,0BAAA;EACA,SAAA;EACA,YAAA;AAbR","sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Lora', serif;\n}\n\nbody {\n  min-height: 100vh;\n  background: linear-gradient(to top right, #82e6e8, #3d3f8d) no-repeat;\n}\n\nheader {\n  text-align: center;\n  font-size: 2rem;\n  margin-bottom: 3em;\n  margin-top: 2em;\n  color: #fff;\n}\n\nmain {\n  display: flex;\n  justify-content: space-evenly;\n  margin-top: 0;\n\n  form button {\n    align-self: center;\n    padding: 0.2em;\n    width: 7em;\n    height: 3em;\n    background: linear-gradient(to top left, rgba(147, 126, 240, 0.8), rgba(29, 31, 122, 0.8)) no-repeat;\n    color: #fff;\n    border-radius: 5%;\n    border: 1px solid #fff;\n  }\n\n  & button:hover {\n    background: linear-gradient(to top left, rgba(147, 126, 240, 0.5), rgba(29, 31, 122, 0.5)) no-repeat;\n  }\n\n  & button:active {\n    background: linear-gradient(to top left, #937ef0, #1d1f7a) no-repeat;\n  }\n\n  .title {\n    display: flex;\n    gap: 1em;\n    margin-bottom: 1em;\n\n    & h2 {\n      font-size: 2rem;\n      color: #fff;\n    }\n\n    & button {\n      width: 6em;\n      background: linear-gradient(to top left, rgba(147, 126, 240, 0.8), rgba(29, 31, 122, 0.8)) no-repeat;\n      color: #fff;\n      font-size: 1rem;\n      border-radius: 5%;\n      border: 1px solid #fff;\n      margin-left: 10em;\n    }\n\n    & button:hover {\n      background: linear-gradient(to top left, rgba(147, 126, 240, 0.5), rgba(29, 31, 122, 0.5)) no-repeat;\n    }\n\n    & button:active {\n      background: linear-gradient(to top left, #937ef0, #1d1f7a) no-repeat;\n    }\n  }\n\n  .board {\n    min-width: 30em;\n\n    & .add-to-board {\n      border: 1px solid #fff;\n      list-style: none;\n\n      li {\n        background: #cac3ea;\n        padding: 0.8em;\n        color: #fff;\n        font-weight: bold;\n        text-align: center;\n      }\n\n      li:nth-child(odd) {\n        background: #5556af;\n      }\n    }\n  }\n\n  .form {\n    display: flex;\n    flex-direction: column;\n\n    h2 {\n      margin-bottom: 1em;\n      font-size: 2rem;\n      color: #fff;\n      align-self: center;\n    }\n\n    form {\n      display: flex;\n      flex-direction: column;\n      gap: 1em;\n      min-width: 20em;\n\n      #name {\n        padding: 1em;\n      }\n\n      #score {\n        -webkit-appearance: none;\n        -moz-appearance: textfield;\n        margin: 0;\n        padding: 1em;\n      }\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1496,7 +1496,7 @@ var getData = /*#__PURE__*/function () {
         switch (_context.prev = _context.next) {
           case 0:
             _context.next = 2;
-            return fetch("".concat(_modules_variables_js__WEBPACK_IMPORTED_MODULE_4__.url, "/games/Zl4d7IVkemOTTVg2fEid/scores/"));
+            return fetch("".concat(_modules_variables_js__WEBPACK_IMPORTED_MODULE_4__.url, "/games/RSDbPUrD0EJ9ol3LEHWr/scores/"));
 
           case 2:
             response = _context.sent;
@@ -1531,7 +1531,7 @@ var setData = /*#__PURE__*/function () {
         switch (_context2.prev = _context2.next) {
           case 0:
             _context2.next = 2;
-            return fetch("".concat(_modules_variables_js__WEBPACK_IMPORTED_MODULE_4__.url, "/games/Zl4d7IVkemOTTVg2fEid/scores/"), {
+            return fetch("".concat(_modules_variables_js__WEBPACK_IMPORTED_MODULE_4__.url, "/games/RSDbPUrD0EJ9ol3LEHWr/scores/"), {
               method: 'POST',
               headers: {
                 'Content-type': 'application/json'
@@ -1564,12 +1564,48 @@ _modules_variables_js__WEBPACK_IMPORTED_MODULE_4__.form.addEventListener('submit
       e.target.reset();
       getData();
     });
-  } else {
-    sweetalert__WEBPACK_IMPORTED_MODULE_3___default()('Please Fill The Form');
+  } else if (_modules_variables_js__WEBPACK_IMPORTED_MODULE_4__.user.value === '') {
+    sweetalert__WEBPACK_IMPORTED_MODULE_3___default()('Please Add Name', {
+      buttons: {
+        cancel: 'close',
+        "catch": {
+          text: 'Adjust Input',
+          value: 'Adjust Input'
+        },
+        defeat: false
+      }
+    }).then(function (value) {
+      switch (value) {
+        case 'Adjust Input':
+          _modules_variables_js__WEBPACK_IMPORTED_MODULE_4__.user.focus();
+          break;
+
+        default:
+      }
+    });
+  } else if (_modules_variables_js__WEBPACK_IMPORTED_MODULE_4__.score.value === '') {
+    sweetalert__WEBPACK_IMPORTED_MODULE_3___default()('Please Add Score', {
+      buttons: {
+        cancel: 'close',
+        "catch": {
+          text: 'Adjust Input',
+          value: 'Adjust Input'
+        },
+        defeat: false
+      }
+    }).then(function (value) {
+      switch (value) {
+        case 'Adjust Input':
+          _modules_variables_js__WEBPACK_IMPORTED_MODULE_4__.score.focus();
+          break;
+
+        default:
+      }
+    });
   }
 });
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=maind7881df7f14fedd9a44c.js.map
+//# sourceMappingURL=maind444d4614784e83a09c6.js.map
