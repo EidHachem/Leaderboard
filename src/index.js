@@ -9,7 +9,7 @@ const userScoreList = document.querySelector('.add-to-board');
 userScoreList.innerHTML = '';
 
 const getData = async () => {
-  const response = await fetch(`${url}/games/Zl4d7IVkemOTTVg2fEid/scores/`);
+  const response = await fetch(`${url}/games/RSDbPUrD0EJ9ol3LEHWr/scores/`);
   const data = await response.json();
   userScoreList.innerHTML = data.result
     .map((score) => `<li>${score.user}: ${score.score}</li>`)
@@ -19,7 +19,7 @@ const getData = async () => {
 refresh.addEventListener('click', getData);
 
 const setData = async (post) => {
-  await fetch(`${url}/games/Zl4d7IVkemOTTVg2fEid/scores/`, {
+  await fetch(`${url}/games/RSDbPUrD0EJ9ol3LEHWr/scores/`, {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
