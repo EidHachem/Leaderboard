@@ -11,6 +11,7 @@ module.exports = {
     filename: '[name][contenthash].js',
     clean: true,
     assetModuleFilename: '[name][ext]',
+    publicPath: 'Leaderboard',
   },
   devtool: 'source-map',
   devServer: {
