@@ -1,7 +1,5 @@
 const path = require('path');
 const HtmlWebpacckPlugin = require('html-webpack-plugin');
-const BundleAnalyzerPlugin =
-  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   mode: 'development',
@@ -13,14 +11,13 @@ module.exports = {
     filename: '[name][contenthash].js',
     clean: true,
     assetModuleFilename: '[name][ext]',
-    publicPath: '/webpack/',
   },
   devtool: 'source-map',
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist'),
     },
-    port: 3000,
+    port: 3002,
     open: true,
     hot: true,
     compress: true,
@@ -50,10 +47,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpacckPlugin({
-      title: 'webpack',
+      title: 'Leaderboard',
       filename: 'index.html',
       template: 'src/index.html',
     }),
-    new BundleAnalyzerPlugin(),
   ],
 };
