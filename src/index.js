@@ -9,9 +9,10 @@ const userScoreList = document.querySelector('.add-to-board');
 userScoreList.innerHTML = '';
 
 const getData = async () => {
-  const response = await fetch(`${url}/games/RSDbPUrD0EJ9ol3LEHWr/scores/`);
+  const response = await fetch(`${url}/games/RSDbPUrD0EJ9ol3LEOlh/scores/`);
   const data = await response.json();
   userScoreList.innerHTML = data.result
+    .sort((a, b) => b.score - a.score)
     .map((score) => `<li>${score.user}: ${score.score}</li>`)
     .join('');
 };
@@ -19,7 +20,7 @@ const getData = async () => {
 refresh.addEventListener('click', getData);
 
 const setData = async (post) => {
-  await fetch(`${url}/games/RSDbPUrD0EJ9ol3LEHWr/scores/`, {
+  await fetch(`${url}/games/RSDbPUrD0EJ9ol3LEOlh/scores/`, {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
@@ -46,11 +47,11 @@ form.addEventListener('submit', (e) => {
       title: 'Oops...',
       text: 'Please enter a score!',
     });
-  } else if (typeof score.value !== 'number' || score.value < 0) {
+  } else if (score.value < 0 || score.value > 100) {
     Swal.fire({
       icon: 'error',
       title: 'Oops...',
-      text: 'Please enter a valid score! (positive number)',
+      text: 'Please enter a valid score! (positive number between 0 and 100)',
     });
   } else {
     setData(post).then(() => {
