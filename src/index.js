@@ -1,5 +1,5 @@
 import './styles/style.scss';
-import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 import {
   url, refresh, form, user, score,
 } from './modules/variables.js';
@@ -34,48 +34,28 @@ form.addEventListener('submit', (e) => {
     user: `${user.value}`,
     score: `${score.value}`,
   };
-  if (user.value !== '' && score.value !== '') {
+  if (user.value.trim() === '') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please enter a name!',
+    });
+  } else if (score.value.trim() === '') {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please enter a score!',
+    });
+  } else if (typeof score.value !== 'number' || score.value < 0) {
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'Please enter a valid score! (positive number)',
+    });
+  } else {
     setData(post).then(() => {
       e.target.reset();
       getData();
     });
-  } else if (user.value === '') {
-    swal('Please Add Name', {
-      buttons: {
-        cancel: 'close',
-        catch: {
-          text: 'Adjust Input',
-          value: 'Adjust Input',
-        },
-        defeat: false,
-      },
-    })
-      .then((value) => {
-        switch (value) {
-          case 'Adjust Input':
-            user.focus();
-            break;
-          default:
-        }
-      });
-  } else if (score.value === '') {
-    swal('Please Add Score', {
-      buttons: {
-        cancel: 'close',
-        catch: {
-          text: 'Adjust Input',
-          value: 'Adjust Input',
-        },
-        defeat: false,
-      },
-    })
-      .then((value) => {
-        switch (value) {
-          case 'Adjust Input':
-            score.focus();
-            break;
-          default:
-        }
-      });
   }
 });

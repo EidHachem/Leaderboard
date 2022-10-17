@@ -49,6 +49,6 @@
   "dependencies": {
     "gh-pages": "^3.2.3",
     "regenerator-runtime": "^0.13.9",
-    "sweetalert": "^2.1.2"
+    "sweetalert2": "^11.5.2"
   }
 }

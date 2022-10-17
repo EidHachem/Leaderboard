@@ -28,6 +28,7 @@ main {
     padding: 0.2em;
     width: 7em;
     height: 3em;
+    cursor: pointer;
     background: linear-gradient(to top left, rgba(147, 126, 240, 0.8), rgba(29, 31, 122, 0.8)) no-repeat;
     color: #fff;
     border-radius: 5%;
@@ -60,6 +61,7 @@ main {
       border-radius: 5%;
       border: 1px solid #fff;
       margin-left: 10em;
+      cursor: pointer;
     }
 
     & button:hover {
