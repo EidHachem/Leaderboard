@@ -6,8 +6,7 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack server",
-    "test": "jest",
-    "deploy": "gh-pages -d dist"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -47,7 +46,6 @@
     "webpack-dev-server": "^4.9.0"
   },
   "dependencies": {
-    "gh-pages": "^3.2.3",
     "regenerator-runtime": "^0.13.9",
     "sweetalert2": "^11.5.2"
   }
