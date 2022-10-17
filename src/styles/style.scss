@@ -75,6 +75,7 @@ main {
 
   .board {
     min-width: 30em;
+    padding-bottom: 2em;
 
     & .add-to-board {
       border: 1px solid #fff;
@@ -122,5 +123,51 @@ main {
         padding: 1em;
       }
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5em;
+      margin: 1.5em 0;
+
+      & button {
+        margin-left: 0;
+      }
+    }
+
+    .button {
+      margin-bottom: 0;
+    }
+  }
+
+  header {
+    font-size: 1.25rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .board {
+    width: 90%;
+    padding: 1em 0.5em;
+  }
+
+  .display {
+    width: 90%;
+  }
+
+  .add-to-board {
+    width: 70%;
   }
 }
