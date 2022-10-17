@@ -11,7 +11,6 @@ module.exports = {
     filename: '[name][contenthash].js',
     clean: true,
     assetModuleFilename: '[name][ext]',
-    publicPath: '/Leaderboard/',
   },
   devtool: 'source-map',
   devServer: {
@@ -54,11 +53,3 @@ module.exports = {
     }),
   ],
 };
-
-// const productionConfig = merge([
-//   {
-//     output: {
-//       publicPath: '/Leaderboard/',
-//     },
-//   },
-// ]);
