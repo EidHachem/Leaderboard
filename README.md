@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-- [Click here](https://eidhachem.github.io/Leaderboard/)
+- [Click here](https://leaderboard-eid.netlify.app/)
 
 ### Prerequisites
 
